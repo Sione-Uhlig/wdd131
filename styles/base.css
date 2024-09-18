@@ -1,0 +1,83 @@
+
+body  {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+  }
+  
+  h1 {
+    padding: 25px;
+  }
+
+  nav {
+    list-style-type: none;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  nav a {
+    padding: 15px;
+  }
+
+
+  nav a:hover {
+    border: 1px solid white;
+    color: yellow;
+  }
+
+  header {
+    justify-content: center;
+    background-color: gray;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  main h2 {
+    text-align: center;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto ;
+    max-width: 1500px;
+  }
+
+#about-me {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+  }
+  #about-me p {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  #homepage-image {
+   float: right;
+   grid-column-start: 2;
+   grid-column-end: 3;
+  
+  }
+
+   #web-dev-resources {
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+
+  #web-dev-resources ul li {
+    justify-content: space-evenly;
+    text-align: center;
+    list-style-type: none;
+  }
+  footer{
+    grid-row: 3;
+    background-color: grey;
+  }
+
+ 
