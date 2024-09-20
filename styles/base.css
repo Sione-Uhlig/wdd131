@@ -1,4 +1,8 @@
 
+* {
+  margin: 0 auto;
+  max-width: 1500px;
+}
 body  {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -9,6 +13,7 @@ body  {
   
   h1 {
     padding: 25px;
+    font-size: 40px;
   }
 
   nav {
@@ -19,7 +24,12 @@ body  {
   }
 
   nav a {
+    color: white;
+  }
+
+   a {
     padding: 15px;
+    text-decoration: none;
   }
 
 
@@ -37,47 +47,82 @@ body  {
 
   main h2 {
     text-align: center;
+    background-color: gray;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 0;
+    padding: 10px;
+    display:block;
+    
   }
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto ;
-    max-width: 1500px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    max-width: auto;
   }
 
-#about-me {
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
+  .card {
+    border: 1px solid black;
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+  }
+
+  h2 {
+    border-radius: 1rem;
+  }
+
+.about-me {
+  display: flex;
+  justify-content: space-around;
     
   }
-  #about-me p {
+  .about-me p {
     text-align: center;
     padding: 10px;
   }
   
-  #homepage-image {
-   float: right;
-   grid-column-start: 2;
-   grid-column-end: 3;
-  
+  .homepage-image {
+   padding: 1rem;
+   max-height: 250px;
+   max-width: auto;
   }
 
-   #web-dev-resources {
+  h3 {
     text-align: center;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    border-bottom: 1px solid black;
+    width: 80%;
+    font-size: 20px;
+    margin: auto;
   }
 
 
-  #web-dev-resources ul li {
+
+ .dev  {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 2rem;
+  }
+
+  li {
+    margin-left: 30px;
+  }
+
+  #flag{
+    display: flex;
     justify-content: space-evenly;
     text-align: center;
-    list-style-type: none;
+    padding: 2rem;
   }
+ 
+
   footer{
-    grid-row: 3;
     background-color: grey;
+    padding: 30px;
   }
 
  
