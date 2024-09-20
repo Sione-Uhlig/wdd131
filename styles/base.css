@@ -5,8 +5,7 @@
 }
 body  {
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: normal;
     font-style: normal;
 
   }
@@ -59,7 +58,6 @@ body  {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
-    max-width: auto;
   }
 
   .card {
@@ -87,7 +85,6 @@ body  {
   .homepage-image {
    padding: 1rem;
    max-height: 250px;
-   max-width: auto;
   }
 
   h3 {
