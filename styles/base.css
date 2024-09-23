@@ -114,6 +114,10 @@ body  {
     margin-left: 30px;
   }
 
+  ul a:hover {
+    color:#000cb3;
+  }
+
   #flag{
     display: flex;
     justify-content: space-evenly;
