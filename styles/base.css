@@ -1,14 +1,21 @@
 
+* {
+  margin: 0 auto;
+  max-width: 1500px;
+}
 body  {
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: normal;
     font-style: normal;
 
   }
   
   h1 {
     padding: 25px;
+    font-size: 40px;
+  }
+  h1 span {
+    color: #0B138A;
   }
 
   nav {
@@ -19,7 +26,12 @@ body  {
   }
 
   nav a {
+    color: white;
+  }
+
+   a {
     padding: 15px;
+    text-decoration: none;
   }
 
 
@@ -30,54 +42,101 @@ body  {
 
   header {
     justify-content: center;
-    background-color: gray;
+    background-color: #3bd6c6;
     text-align: center;
     border: 1px solid black;
   }
 
   main h2 {
     text-align: center;
+    background-color: #3bd6c6;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 0;
+    padding: 10px;
+    display:block;
+    
   }
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto ;
-    max-width: 1500px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
   }
 
-#about-me {
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
+  .card {
+    border: 1px solid black;
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+  }
+
+  h2 {
+    border-radius: 1rem;
+  }
+
+.about-me {
+  display: flex;
+  justify-content: space-around;
     
   }
-  #about-me p {
+  .about-me p {
     text-align: center;
     padding: 10px;
+    font-size: 18px;
   }
   
-  #homepage-image {
-   float: right;
-   grid-column-start: 2;
-   grid-column-end: 3;
-  
+  .homepage-image {
+   padding: .5rem;
+   max-height: 250px;
+   width: auto;
   }
 
-   #web-dev-resources {
+  h3 {
     text-align: center;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    border-bottom: 1px solid black;
+    width: 60%;
+    font-size: 20px;
+    margin: auto;
   }
 
 
-  #web-dev-resources ul li {
+
+ .dev  {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 2rem;
+  }
+
+  li {
+    margin-left: 30px;
+  }
+
+  ul a:hover {
+    color:#000cb3;
+  }
+
+  #flag{
+    display: flex;
     justify-content: space-evenly;
     text-align: center;
-    list-style-type: none;
+    padding: 2rem;
+    margin-right: 10px;
+
   }
+ 
+
   footer{
-    grid-row: 3;
-    background-color: grey;
+    background-color: #3bd6c6;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+  }
+  #lastModified {
+    color: #0B138A;
+    font-size: 13px;
   }
 
  

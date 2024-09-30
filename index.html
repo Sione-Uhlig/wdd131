@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
     <header>
-        <h1 id="title"> WDD 131 - Dynamic Web Fundamentals - Sione Uhlig</h1>
+        <h1 id="title"> WDD 131 - Dynamic Web Fundamentals - <span id="myname">Sione Uhlig</span></h1>
         <nav>
             <a href="https://www.linkedin.com/"> LinkedIn </a>                <a href=" https://byui.instructure.com/"> I-Learn </a>
             <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng#title_number1"> Scripture </a>
@@ -22,27 +23,33 @@
 
     </header>
     <main>
-        <section id="about-me" class="card">
+        <section class="card">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis officiis, id laboriosam obcaecati inventore eos consequuntur possimus voluptas, qui nam cupiditate officia nulla eius quibusdam totam molestias non ea incidunt, sapiente nesciunt maxime itaque distinctio. Incidunt culpa ducimus at itaque est sit amet ipsa. Doloribus commodi ad corrupti! Sapiente?</p>
-            <img id="homepage-image" src="images/IMG_1123.jpg" alt="Image of Sione Uhlig and his wife Katy Uhlig">
+            <div class="about-me">
+                <p>My name is Sione Uhlig, and I’m from Wells, Nevada—a small town with a population of around 1,500. Growing up in such a small community, there isn't much to do other than outdoor activities, so I quickly fell in love with hiking, fishing, swimming, camping, and hunting. I met my wife in Dallas, Texas (the person on the right in the photo), and we have been married for almost three years. She shares my love of the outdoors, so whenever we get the chance, we enjoy spending time outside together.</p>
+                <img class="homepage-image" src="images/IMG_1123.jpg" alt="Image of Sione Uhlig and his wife Katy Uhlig">
+            </div>
+
+            <h3> Dallas Texas U.S.A </h3>
+
+            <div id="flag" class="country">
+                <img class="flag" src="images/American-flag.png" alt="Image of the American flag.">
+                <p>The first Six Flags amusement park opened in Arlington, just outside Dallas, in 1961. The name “Six Flags” honors the six nations that have governed Texas throughout its history. </p>
+            </div>
         </section>
 
         <section id="web-dev-resources" class="card">
             <h2>Web Dev Resources</h2>
-            <ul>
-                <li><a href="https://coolors.co/contrast-checker/112a46-acc8e5"> Color Contrast Checker</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/"> MDN Web Docs Sources </a></li>
-                <li><a href="https://validator.w3.org/">W3C validator</a></li>
-            </ul>
+                <ul class="dev">
+                    <li><a href="https://coolors.co/contrast-checker/112a46-acc8e5"> Color Contrast Checker</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/"> MDN Web Docs Sources </a></li>
+                    <li><a href="https://validator.w3.org/">W3C validator</a></li>
+                </ul>
         </section>
     </main>
     <footer>
-        <p>© This year my name </p>
-        <p id="lastModified">
-            <span>
-
-            </span>
+        <p>© <span id="yearjs"></span> 🌮 Sione Uhlig 🌮 United States of America </p>
+        <p id="lastModified"> Last Modification: 
         </p>
     </footer>
     
