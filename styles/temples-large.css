@@ -1,4 +1,4 @@
-@media (min-width: 724px) {
+@media (min-width: 705px) {
     header  {
         display: flex;
         align-items: center;
@@ -18,8 +18,8 @@
     .navigation  a {
         display: block;
         flex: 1 1 100%;
-        padding-left: 40px;
-        padding-right: 40px;
     }
+
+
 
 }
