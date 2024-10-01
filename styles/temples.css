@@ -1,6 +1,7 @@
 * {
     margin: 0 auto;
     padding: 0;
+    max-width: 1550px;
 }
 
 body {
@@ -12,17 +13,9 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #3bd6c6 ;
-    color: #0B138A;
-    padding: 1rem;
+    background-color: #3bd6c6;
 }
 
-main {
-    margin: 0 auto;
-    max-width: 90%;
-}
 
 h1 {
     text-align: left;
@@ -40,7 +33,7 @@ h1 {
     text-align: center;
     text-decoration: none;
     color: #0B138A;
-    font-size: 2rem;
+    font-size: 30px;
 }
 
 .navigation a:hover {
@@ -55,25 +48,19 @@ h2 {
 
 #menu::before {
     content:'≡';
-    font-size: 2rem;
+    font-size: 30px;
     padding: 1rem;
 }
 
-figure {
-     display: grid;
-     grid-template-columns: auto;
-     text-align: center;
-
-}
 #menu.open::before {
     content: "❌";
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #menu {
     background: none;
     border: none;
-    font-size: 2rem;
+    font-size: 18px;
     color: #0B138A;
     position: absolute;
     top: 1rem;
@@ -81,7 +68,12 @@ figure {
 }
 .open a {
     display: block;
-    background-color: gray;
+    margin: 0;
+    
+}
+
+main {
+    max-width: 1500px;
 }
 
 
@@ -89,7 +81,6 @@ footer{
     background-color: #3bd6c6;
     padding: 30px;
     text-align: center;
-    font-size: 18px;
   }
   #lastModified {
     color: #0B138A;
