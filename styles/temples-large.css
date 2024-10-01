@@ -20,6 +20,16 @@
         flex: 1 1 100%;
     }
 
+    main {
+        display: grid;
+        max-width: 90%;
+    }
+
+    figure {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 
 
 }
