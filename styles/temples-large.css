@@ -13,6 +13,7 @@
         display: flex;
         flex-direction: row;
        align-items: flex-end;
+       font-size: 25px;
     }
 
     .navigation  a {
@@ -20,14 +21,29 @@
         flex: 1 1 100%;
     }
 
-    main {
-        display: grid;
-        max-width: 90%;
+    .navigation a:hover {
+        color: yellow;
+        background-color: gray;
     }
 
-    figure {
-        display: flex;
-        flex-wrap: wrap;
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr auto;
+        max-width: 1500px;
+    }
+
+    h2 {
+        grid-row-start: 1;
+    }
+
+figure {grid-row-start: 2;}
+
+
+
+    img {
+        max-width: 300px;
+        max-height: auto;
     }
 
 
