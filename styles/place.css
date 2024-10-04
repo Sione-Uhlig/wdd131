@@ -4,5 +4,12 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
     font-style: normal;
-    max-width: 1500px;
+    max-width: 2000;
+    width: auto;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #3bd6c6;
 }
