@@ -1,0 +1,57 @@
+@media (min-width: 705px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    header {
+        text-align: center;
+        font-size: 40px;
+        background-color: #3bd6c6;
+    }
+
+    h1 {
+        padding: 10px;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        max-width: 1500px;
+    }
+
+    .data {
+        position: absolute;
+        width: 20%;
+        height:auto;
+        padding: 2.5%;
+        top: 225px;
+        left: 2.5%;
+        background-color: #05445E;
+        color: #75E6DA;
+        opacity: 75%;
+        font-size: 1.5rem;
+    }
+
+    .weather {
+        position: absolute;
+        width: 20%;
+        height:auto;
+        padding: 2.5%;
+        top: 70%;
+        left: 60%;
+        background-color: #05445E;
+        color: #75E6DA;
+        opacity: 75%;
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+    
+}
