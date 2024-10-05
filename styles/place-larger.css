@@ -1,4 +1,4 @@
-@media (min-width: 705px) {
+@media (min-width: 1000px) {
 
     :root {
         --heading-color: #3bd6c6;
@@ -21,29 +21,30 @@
     h1 {
         padding: 10px;
     }
-
-    .hero img {
+    .hero-container {
         position: relative;
-        width: auto;
+        width: 100%;
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+
+    .hero img{
+        width: 100%;
         height: auto;
-        margin: 0;
-        max-width: 100%;
-        padding: 0;
-        
+        display: block;
     }
 
     .data {
         position: absolute;
         width: 15%;
-        height:auto;
         padding: 2.5%;
-        margin-top: 20px;
+        margin-top: 10px;
         top: 225px;
         left: 2.5%;
         background-color: var(--table-color);
         color: var(--heading-color);
         opacity: 75%;
-        font-size: 1.5rem;
+        font-size: 20px;
     }
     .data p {
         margin-top: 20px;
@@ -61,15 +62,14 @@
 
     .weather {
         position: absolute;
-        width: 20%;
-        height:auto;
-        padding: 2.5%;
-        top: 100%;
-        left: 70%;
+        width: 15%;
+        padding: 45px;
+        top: 85%;
+        left: 78%;
         background-color: var(--table-color);
         color: var(--heading-color);
         opacity: 90%;
-        font-size: 1.5rem;
+        font-size: 20px;
     }
 
     .weather div {

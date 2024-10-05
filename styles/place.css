@@ -10,8 +10,53 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
     font-style: normal;
-    max-width: 2000px;
+    max-width: 680px;
     width: auto;
+}
+
+h1 {
+    background-color: var(--heading-color);
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    font-size: 50px;
+    width: auto;
+}
+
+.hero img {
+    max-width: 97.8%;
+    height: auto;
+    margin: 5px;
+    margin-left: 6px;
+    margin-bottom: 0px;
+}
+
+.data, .weather {
+    width: 96.5%;
+    text-align: center;
+    background-color: var(--table-color);
+    color: var(--heading-color);
+    border: 2px solid black;
+    margin: 10px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.data div {
+    font-size: 25px;
+}
+
+.weather div {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+
+.icon {
+    max-width: 70px;
+    justify-content: right;
 }
 
 
