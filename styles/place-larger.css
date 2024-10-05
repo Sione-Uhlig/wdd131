@@ -40,6 +40,15 @@
         font-size: 1.5rem;
     }
 
+    .data div {
+        position: absolute;
+        background-color: gray;
+        top: -15px;
+        left: -15px;
+        padding: 15px;
+        padding-left: 50px;
+    }
+
     .weather {
         position: absolute;
         width: 20%;
