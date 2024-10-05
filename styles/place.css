@@ -1,17 +1,23 @@
+:root {
+    --heading-color: #3bd6c6;
+    --table-color: #05445E;
+
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
     font-style: normal;
-    max-width: 2000;
+    max-width: 2000px;
     width: auto;
 }
 
 
 footer {
     text-align: center;
-    background-color: #3bd6c6;
+    background-color: var(--heading-color);
     font-size: 20px;
     padding: 20px;
 }

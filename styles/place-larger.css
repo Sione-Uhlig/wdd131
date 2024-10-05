@@ -1,5 +1,10 @@
 @media (min-width: 705px) {
 
+    :root {
+        --heading-color: #3bd6c6;
+        --table-color: #05445E;
+    }
+
     * {
         margin: 0;
         padding: 0;
@@ -10,7 +15,7 @@
         width: 100%;
         text-align: center;
         font-size: 35px;
-        background-color: #3bd6c6;
+        background-color: var(--heading-color);
     }
 
     h1 {
@@ -35,8 +40,8 @@
         margin-top: 20px;
         top: 225px;
         left: 2.5%;
-        background-color: #05445E;
-        color: #75E6DA;
+        background-color: var(--table-color);
+        color: var(--heading-color);
         opacity: 75%;
         font-size: 1.5rem;
     }
@@ -61,8 +66,8 @@
         padding: 2.5%;
         top: 100%;
         left: 70%;
-        background-color: #05445E;
-        color: #75E6DA;
+        background-color: var(--table-color);
+        color: var(--heading-color);
         opacity: 90%;
         font-size: 1.5rem;
     }
