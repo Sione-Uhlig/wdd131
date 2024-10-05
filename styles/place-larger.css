@@ -68,12 +68,23 @@
     }
 
     .weather div {
+        display: flex;
         position: absolute;
         background-color: gray;
         width: 80%;
         top: 15px;
         left: -15px;
         padding-left: 50px;
+    }
+
+    .weather-header h2 {
+        margin-right: 10px; 
+    }
+
+    .icon {
+        width: 50px;  
+        height: auto;
+        margin-left: 20px; 
     }
 
     .weather p {

@@ -15,12 +15,15 @@
 </head>
 <body>
     <header>
-        <h1> Nevada</h1>
+        <h1> Nevada </h1>
     </header>
 
     <main>
         <div class="hero">
-            <img class="lake" src="images/Nevada.jpg" alt="Image of Nevada's Mountains ">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/Nevada.webp">
+                <img class="lake" src="images/Nevada.webp" alt="Image of Nevada's Mountains ">
+            </picture>
         </div>
         <section class="data">
             <div>
@@ -37,6 +40,7 @@
         <section class="weather">
             <div>
                 <h2>Weather</h2>
+                <img class="icon" src="images/sunny_cloudy_icon.svg" alt="sunny with clouds icon">
             </div>
             <p>Temperature: </p>
             <p>Conditions: </p>
