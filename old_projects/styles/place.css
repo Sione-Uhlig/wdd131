@@ -1,15 +1,67 @@
+:root {
+    --heading-color: #3bd6c6;
+    --table-color: #05445E;
+
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
     font-style: normal;
-    max-width: 2000;
     width: auto;
+}
+
+h1 {
+    background-color: var(--heading-color);
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    font-size: 50px;
+    width: auto;
+}
+
+.hero img {
+    max-width: 98.5%;
+    height: auto;
+    margin: 5px;
+    margin-left: 6px;
+    margin-bottom: 0px;
+}
+
+.data, .weather{
+    width: 96.5%;
+    text-align: center;
+    background-color: var(--table-color);
+    color: var(--heading-color);
+    border: 2px solid black;
+    margin: 10px;
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.data div {
+    font-size: 20px;
+}
+
+.weather div {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.icon {
+    max-width: 70px;
+    justify-content: right;
 }
 
 
 footer {
     text-align: center;
-    background-color: #3bd6c6;
+    background-color: var(--heading-color);
+    font-size: 15px;
+    padding: 20px;
 }

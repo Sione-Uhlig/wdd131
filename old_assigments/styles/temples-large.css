@@ -1,0 +1,61 @@
+@media (min-width: 705px) {
+    header  {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    .navigation  {
+        display: flex;
+        flex-direction: row;
+       align-items: center;
+       font-size: 25px;
+    }
+
+    .navigation  a {
+        display: block;
+    }
+
+    .navigation a:hover {
+        color: yellow;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    h2 {
+        grid-column: span 3;
+        text-align: center;
+    }
+  
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    figure {
+        width: 30%;
+        margin: 0;
+        text-align: center;
+    }
+    
+
+    img {
+        width: 100%;
+        height: auto;
+        max-width: none;
+    }
+
+
+
+}
