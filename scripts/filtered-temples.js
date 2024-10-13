@@ -161,7 +161,7 @@ smallLink.addEventListener("click", () => {
   }));
 });
 
-function createTempleCard(filteredTemples) {
+function createTempleCard(filteredTemples){
   document.querySelector(".container").innerHTML = "";
   filteredTemples.forEach(temple => {
       let card = document.createElement("section");
@@ -175,17 +175,10 @@ function createTempleCard(filteredTemples) {
       location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
       dedication.innerHTML = `<span class="label"> Dedicated: </span> ${temple.dedicated}`;
       area.innerHTML = `<span class="label">Size</span> ${temple.area} sq ft`;
-
-      const webpUrl = temple.imageUrl.replace(/\.(jpg|jpeg|png)$/, '.webp');
-      img.setAttribute("src", webpUrl);
-
-      img.onerror = function() {
-          this.onerror = null; 
-          this.src = temple.imageUrl;
-      };
-
-      img.setAttribute("alt", `${temple.templeName} Temple`);
+      img.setAttribute("src", temple.imageUrl);
+      img.setAttribute("alt", `${temple.templeName} Temple `);
       img.setAttribute("loading", "lazy");
+
       card.appendChild(name);
       card.appendChild(location);
       card.appendChild(dedication);
@@ -193,5 +186,5 @@ function createTempleCard(filteredTemples) {
       card.appendChild(img);
 
       document.querySelector(".container").appendChild(card);
-  });
+  } );
 }
