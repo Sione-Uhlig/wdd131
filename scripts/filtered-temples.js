@@ -141,7 +141,7 @@ const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => {
         const year = parseInt(temple.dedicated.split("-")[0]);
-        return year < 2000;
+        return year < 1900;
     }));
 });
 
