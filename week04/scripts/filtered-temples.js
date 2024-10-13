@@ -75,7 +75,46 @@ const temples = [
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
+    {
+      templeName: "San Diego California",
+      location: "San Diego California",
+      dedicated: "1983, December, 2",
+      area: 72000,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/400x250/san-diego-temple-765109-wallpaper.jpg"
+    },
+    {
+      templeName: "Idaho Falls Idaho",
+      location: "Mexico City, Mexico",
+      dedicated: "1945, September, 23",
+      area: 92177,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/idaho-falls-idaho/2019/400x250/5-Idaho-Falls-Temple-1869448.jpg"
+    },
+    {
+      templeName: "Indianapolis Indiana",
+      location: "Indianapolis Indiana",
+      dedicated: "2015, August, 23",
+      area: 9794,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/indianapolis-indiana/400x250/independence-indiana-temple-1510459-wallpaper.jpg"
+    },
+    {
+      templeName: "Córdoba Argentina",
+      location: "Córdoba Argentina",
+      dedicated: "2015, May, 17",
+      area: 116642,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cordoba-argentina/400x250/cordoba-argentina-temples-buildings-1436933-wallpaper.jpg"
+    },
+    {
+      templeName: "Bosston Massachusetts",
+      location: "Bosston Massachusetts",
+      dedicated: "2000, October, 1",
+      area: 69600,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/boston-massachusetts/400x250/boston-temple-lds-945541-wallpaper.jpg"
+    },
   ];
 
 // Temple card creator.
@@ -85,14 +124,18 @@ const temples = [
 
 createTempleCard(temples);
 
+document.querySelector("#home").addEventListener("click", () => {
+  createTempleCard(temples);
+});
 const newLink = document.querySelector('#new');
 
 newLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => {
         const year = parseInt(temple.dedicated.split("-")[0]);
-        return year > 2000;
+        return year >= 2000;
     }));
 });
+
 const oldLink = document.querySelector("#old");
 
 oldLink.addEventListener("click", () => {
@@ -100,6 +143,22 @@ oldLink.addEventListener("click", () => {
         const year = parseInt(temple.dedicated.split("-")[0]);
         return year < 2000;
     }));
+});
+
+const largeLink = document.querySelector("#large");
+
+largeLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => {
+    return temple.area > 90000;
+  }));
+});
+
+const smallLink = document.querySelector("#small");
+
+smallLink.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => {
+    return temple.area <  10000 ;
+  }));
 });
 
 function createTempleCard(filteredTemples){
