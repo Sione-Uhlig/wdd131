@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals | Product Review Form - Sione Uhlig</title>
+    <meta name="author" content="Sione Uhlig">
+    <meta name="description" content=" WDD 131 - Dynamic Web Fundamentals - Sione Uhlig | W0 Assignment: Product Review Form " >
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts\form.js" defer></script>
+</head>
+<body>
+
+    <main>
+        <h1>Product Review</h1>
+        <!-- action.html is another html form -->
+            <form method="get" action="review.html"> 
+                <fieldset>
+                    <legend>Application Information</legend>
+                    <div>Overall Rating</div>
+                    <label><input type="radio" name="Overallrating" value="☆">☆</label>
+                    <label><input type="radio" name="Overallrating" value="☆">☆☆</label>
+                    <label><input type="radio" name="Overallrating" value="☆">☆☆☆</label>
+                    <label><input type="radio" name="Overallrating" value="☆">☆☆☆☆</label>
+                    <label><input type="radio" name="Overallrating" value="☆">☆☆☆☆☆</label>
+                    <label>Written Review <input type="text" name="Product"> </label>
+                    <label>Your Name <input type="text" name="Name"> </label>
+                </fieldset>
+
+            </form>
+    </main>
+
+
+    <footer>
+        <p>© <span id="yearjs"></span> 🌮 Sione Uhlig 🌮 United States of America </p>
+        <p id="lastModified"> Last Modification: 
+        </p>
+    </footer>
+</body>
+</html>
