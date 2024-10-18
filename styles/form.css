@@ -1,0 +1,61 @@
+main {
+    align-content: center;
+    margin-left: 35%;
+}
+.wf1 fieldset {
+    margin: 2rem;
+    border: 1p solid black;
+    border-radius: 6px;
+    max-width: 50%;
+    font-size: 22px;
+}
+h1 {
+    background-color: #3bd6c6;
+    padding: 30px;
+    max-width: 47%;
+    text-align: center;
+    margin-left: 4%;
+}
+#product {
+    font-size: 20px;
+    padding-right: 42%;
+}
+
+#useful_features {
+    align-items: left;
+}
+
+
+#user-name {
+    font-size: 30px;
+    padding-right: 90px;
+}
+#submit {
+    margin-top: 15px;
+    padding: 10px;
+    padding-left: 100px;
+    font-size: 30px;
+    margin-left: 14%;
+    padding-right: 100px;
+}
+
+#date {
+    font-size: 20px;
+    padding-right: 60%;
+}
+#written_review {
+    font-size: 20px;
+    padding-right: 42%;
+}
+footer{
+    background-color: #3bd6c6;
+    padding: 20px;
+    text-align: center;
+    max-width: 33%;
+    margin-left: 37%;
+    font-size: 20px;
+  }
+  #lastModified {
+    color: #0B138A;
+    font-size: 20px;
+  }

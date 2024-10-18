@@ -6,29 +6,46 @@
     <title>WDD 131 - Dynamic Web Fundamentals | Product Review Form - Sione Uhlig</title>
     <meta name="author" content="Sione Uhlig">
     <meta name="description" content=" WDD 131 - Dynamic Web Fundamentals - Sione Uhlig | W0 Assignment: Product Review Form " >
-    <link rel="stylesheet" href="styles/filtered-temples.css">
-    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="scripts\form.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
 
     <main>
-        <h1>Product Review</h1>
-        <!-- action.html is another html form -->
-            <form method="get" action="review.html"> 
+            <form method="get" action="review.html" class="wf1"> 
+                <h1>Product Review</h1>
                 <fieldset>
-                    <legend>Application Information</legend>
-                    <div>Overall Rating</div>
-                    <label><input type="radio" name="Overallrating" value="☆">☆</label>
-                    <label><input type="radio" name="Overallrating" value="☆">☆☆</label>
-                    <label><input type="radio" name="Overallrating" value="☆">☆☆☆</label>
-                    <label><input type="radio" name="Overallrating" value="☆">☆☆☆☆</label>
-                    <label><input type="radio" name="Overallrating" value="☆">☆☆☆☆☆</label>
-                    <label>Written Review <input type="text" name="Product"> </label>
-                    <label>Your Name <input type="text" name="Name"> </label>
+                    <div id="title">Product Name</div>
+                    <label><input id="product" type="text" name="productname" required></label>
+                    <div id="title">Overall Rating</div>
+                    <div id="star">
+                    <div id="rating">☆</div>
+                    <label id="rating"><input type="radio" name="Overallrating" value="☆" required></label>
+                    <div id="rating">☆☆</div>
+                    <label id="rating"><input type="radio" name="Overallrating" value="☆" required></label>
+                    <div id="rating">☆☆☆</div>
+                    <label id="rating"><input type="radio" name="Overallrating" value="☆" required></label>
+                    <div id="rating">☆☆☆☆</div>
+                    <label id="rating"><input type="radio" name="Overallrating" value="☆" required></label>
+                    <div id="rating">☆☆☆☆☆</div>
+                    <label id="rating"><input type="radio" name="Overallrating" value="☆" required></label>
+                    </div>
+                    <div id="title">Date of Installation</div>
+                    <label><input id="date" type="date" name="InstallationDate" value="Date of Installation"></label>
+                    <div id="title">Which features did you find useful in the product?</div>
+                    <div id="title">(Check all that apply)</div>
+                    <label><input id="useful_features" type="checkbox" name="durability" value="Durability">Durability</label><br> 
+                    <label><input id="useful_features" type="checkbox" name="ease of use" value="Ease of Use">Ease of Use</label><br> 
+                    <label><input id="useful_features" type="checkbox" name="Performance" value="Performance">Performance</label><br> 
+                    <label><input id="useful_features" type="checkbox" name="Design" value="Design">Design</label>
+                    <div id="title">Written Review </div>
+                    <label><input id="written_review" type="textarea" name="Product"> </label>
+                    <div id="title">Your Name</div>
+                    <label><input id="user-name" type="text" name="Name"> </label><br>
+                    <label><input id="submit" type="submit" value="Post Review"></label>
                 </fieldset>
 
             </form>
@@ -36,7 +53,7 @@
 
 
     <footer>
-        <p>© <span id="yearjs"></span> 🌮 Sione Uhlig 🌮 United States of America </p>
+        <p>© <span id="yearjs"></span> 🌮 Sione Uhlig 🌮 <br> United States of America </p>
         <p id="lastModified"> Last Modification: 
         </p>
     </footer>
