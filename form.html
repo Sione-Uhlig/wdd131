@@ -16,35 +16,45 @@
 
     <main>
             <form method="get" action="review.html" class="wf1"> 
-                <h1>Product Review</h1>
+                <h1 id="product-h1">Product Review</h1>
                 <fieldset>
                     <div id="title">Product Name</div>
-                    <label><input id="product" type="text" name="productname" required></label>
+                    <select id="product" name="product" required>
+                        <option value="" disabled selected>Choose a Product ...</option>
+                    </select>
+
+
                     <div id="title">Overall Rating</div>
                     <div id="star">
-                    <div id="rating">☆</div>
-                    <label id="rating"><input type="radio" name="Overallrating" value="☆" required></label>
-                    <div id="rating">☆☆</div>
-                    <label id="rating"><input type="radio" name="Overallrating" value="☆" required></label>
-                    <div id="rating">☆☆☆</div>
-                    <label id="rating"><input type="radio" name="Overallrating" value="☆" required></label>
-                    <div id="rating">☆☆☆☆</div>
-                    <label id="rating"><input type="radio" name="Overallrating" value="☆" required></label>
-                    <div id="rating">☆☆☆☆☆</div>
-                    <label id="rating"><input type="radio" name="Overallrating" value="☆" required></label>
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                        <label for="star5">☆</label>
+                        <input type="radio" id="star4" name="rating" value="4" required>
+                        <label for="star4">☆</label>
+                        <input type="radio" id="star3" name="rating" value="3" required>
+                        <label for="star3">☆</label>
+                        <input type="radio" id="star2" name="rating" value="2" required>
+                        <label for="star2">☆</label>
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                        <label for="star1">☆</label>
                     </div>
+
                     <div id="title">Date of Installation</div>
-                    <label><input id="date" type="date" name="InstallationDate" value="Date of Installation"></label>
-                    <div id="title">Which features did you find useful in the product?</div>
-                    <div id="title">(Check all that apply)</div>
+                    <label><input id="date" type="date" name="InstallationDate" value="Date of Installation" required></label>
+
+                    <div id="title">Which features did you find useful in the product? <br> (Check all that apply)</div>
                     <label><input id="useful_features" type="checkbox" name="durability" value="Durability">Durability</label><br> 
                     <label><input id="useful_features" type="checkbox" name="ease of use" value="Ease of Use">Ease of Use</label><br> 
                     <label><input id="useful_features" type="checkbox" name="Performance" value="Performance">Performance</label><br> 
                     <label><input id="useful_features" type="checkbox" name="Design" value="Design">Design</label>
-                    <div id="title">Written Review </div>
-                    <label><input id="written_review" type="textarea" name="Product"> </label>
-                    <div id="title">Your Name</div>
-                    <label><input id="user-name" type="text" name="Name"> </label><br>
+
+
+                    <div id="title">Written Review <label id="optional">(Optional)</label></div>
+                    <label><textarea id="written_review" type="textarea" name="Product" rows="5"> </textarea> </label>
+
+                    <div id="title">Your Name <label id="optional">(Optional)</label></div>
+                    <label><input id="user-name" type="text" name="user-name"> </label><br>
+
+                    
                     <label><input id="submit" type="submit" value="Post Review"></label>
                 </fieldset>
 
@@ -52,7 +62,7 @@
     </main>
 
 
-    <footer>
+    <footer id="foot-1">
         <p>© <span id="yearjs"></span> 🌮 Sione Uhlig 🌮 <br> United States of America </p>
         <p id="lastModified"> Last Modification: 
         </p>
