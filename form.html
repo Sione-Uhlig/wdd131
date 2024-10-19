@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals | Product Review Form - Sione Uhlig</title>
     <meta name="author" content="Sione Uhlig">
-    <meta name="description" content=" WDD 131 - Dynamic Web Fundamentals - Sione Uhlig | W0 Assignment: Product Review Form " >
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Sione Uhlig | W0 Assignment: Product Review Form">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,57 +15,59 @@
 <body>
 
     <main>
-            <form method="get" action="review.html" class="wf1"> 
-                <h1 id="product-h1">Product Review</h1>
-                <fieldset>
-                    <div class="title">Product Name</div>
+        <form method="get" action="review.html" class="wf1"> 
+            <h1 id="product-h1">Product Review</h1>
+            <fieldset>
+                <div class="title">Product Name</div>
+                <label for="product">
                     <select id="product" name="product" required>
                         <option value="" disabled selected>Choose a Product ...</option>
                     </select>
+                </label>
 
+                <div class="title">Overall Rating</div>
+                <div id="star">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">☆</label>
+                    <input type="radio" id="star4" name="rating" value="4" required>
+                    <label for="star4">☆</label>
+                    <input type="radio" id="star3" name="rating" value="3" required>
+                    <label for="star3">☆</label>
+                    <input type="radio" id="star2" name="rating" value="2" required>
+                    <label for="star2">☆</label>
+                    <input type="radio" id="star1" name="rating" value="1" required>
+                    <label for="star1">☆</label>
+                </div>
 
-                    <div class="title">Overall Rating</div>
-                    <div id="star">
-                        <input type="radio" id="star5" name="rating" value="5" required>
-                        <label for="star5">☆</label>
-                        <input type="radio" id="star4" name="rating" value="4" required>
-                        <label for="star4">☆</label>
-                        <input type="radio" id="star3" name="rating" value="3" required>
-                        <label for="star3">☆</label>
-                        <input type="radio" id="star2" name="rating" value="2" required>
-                        <label for="star2">☆</label>
-                        <input type="radio" id="star1" name="rating" value="1" required>
-                        <label for="star1">☆</label>
-                    </div>
+                <div class="title">Date of Installation</div>
+                <label for="date">
+                    <input id="date" type="date" name="InstallationDate" required>
+                </label>
 
-                    <div class="title">Date of Installation</div>
-                    <label><input id="date" type="date" name="InstallationDate" required></label>
+                <div class="title">Which features did you find useful in the product? <br> (Check all that apply)</div>
+                <label><input class="useful_features" type="checkbox" name="durability" value="Durability">Durability</label><br> 
+                <label><input class="useful_features" type="checkbox" name="ease of use" value="Ease of Use">Ease of Use</label><br> 
+                <label><input class="useful_features" type="checkbox" name="Performance" value="Performance">Performance</label><br> 
+                <label><input class="useful_features" type="checkbox" name="Design" value="Design">Design</label>
 
-                    <div class="title">Which features did you find useful in the product? <br> (Check all that apply)</div>
-                    <label><input class="useful_features" type="checkbox" name="durability" value="Durability">Durability</label><br> 
-                    <label><input class="useful_features" type="checkbox" name="ease of use" value="Ease of Use">Ease of Use</label><br> 
-                    <label><input class="useful_features" type="checkbox" name="Performance" value="Performance">Performance</label><br> 
-                    <label><input class="useful_features" type="checkbox" name="Design" value="Design">Design</label>
+                <div class="title">Written Review <label class="optional">(Optional)</label></div>
+                <label for="written_review">
+                    <textarea id="written_review" name="Product" rows="5"></textarea>
+                </label>
 
+                <div class="title">Your Name <label class="optional">(Optional)</label></div>
+                <label for="user-name">
+                    <input id="user-name" type="text" name="user-name">
+                </label><br>
 
-                    <div class="title">Written Review <label class="optional">(Optional)</label></div>
-                    <label><textarea id="written_review" name="Product" rows="5"> </textarea> </label>
-
-                    <div class="title">Your Name <label class="optional">(Optional)</label></div>
-                    <label><input id="user-name" type="text" name="user-name"> </label><br>
-
-                    
-                    <label><input id="submit" type="submit" value="Post Review"></label>
-                </fieldset>
-
-            </form>
+                <label><input id="submit" type="submit" value="Post Review"></label>
+            </fieldset>
+        </form>
     </main>
-
 
     <footer id="foot-1">
         <p>© <span id="yearjs"></span> 🌮 Sione Uhlig 🌮 <br> United States of America </p>
-        <p id="lastModified"> Last Modification: 
-        </p>
+        <p id="lastModified"> Last Modification: </p>
     </footer>
 </body>
 </html>
