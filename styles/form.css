@@ -5,7 +5,7 @@ main {
 .wf1 fieldset {
     background-color: #d2fffa;
     margin: 2rem;
-    border: 1p solid black;
+    border: 1px solid black;
     border-radius: 6px;
     width: 40%;
     font-size: 22px;
@@ -13,7 +13,7 @@ main {
     margin-bottom: 10px;
 }
 
-#title {
+.title  {
     padding-top: 20px;
 }
 
@@ -54,9 +54,6 @@ main {
     width: 95%;
 }
 
-#useful_features {
-    align-items: left;
-}
 
 
 #submit {
@@ -79,7 +76,7 @@ main {
     width: 95%;
 }
 
-#optional {
+.optional {
     color: #0B138A;
 }
 #written_review {
@@ -92,7 +89,7 @@ main {
     width: 95%;
 }
 
-#footer-1{
+#foot-1{
     background-color: #3bd6c6;
     text-align: center;
     width: 43%;
