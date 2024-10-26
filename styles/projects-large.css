@@ -42,6 +42,9 @@ header {
 
 main h2 {
     text-align: center;
+    background-color: #621709;
+    padding: 20px;
+    color: #3bd6c6;
 }
 
 
@@ -67,7 +70,22 @@ img {
     object-fit: cover;
 }
 
+main h3 {
+    background-color: #621709;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
 
+h3 a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+h3 a:hover {
+    color: #3bd6c6;
+}
 footer {
     text-align: center;
     background-color: #621709;
