@@ -47,9 +47,21 @@ header {
     height: auto;
     margin-left: 20px; 
 }
+#product-h1 {
+    text-align: center;
+    background-color: #621709;
+    color: #3bd6c6;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 30px;
+}
+
 
 .wf1 {
-    width: 40%; 
+    max-width: 500px; 
+    width: 100%;
+    margin: 0 auto;
 }
 
 .wf1 fieldset {
@@ -57,6 +69,49 @@ header {
     border: 1px solid black;
     border-radius: 6px;
     padding: 20px;
+    width: 100%;
+}
+.wf1 input[type="text"],
+.wf1 input[type="email"],
+.wf1 input[type="number"],
+.wf1 textarea {
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 0.5rem;
+
+}
+
+.wf1 input,
+.wf1 textarea {
+    width: 80%; 
+    margin: 10px 0; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    align-items: center;
+    padding-right: 70px;
+}
+
+.wf1 input[type="submit"]  {
+    width: auto; 
+    margin-top: 20px;
+    padding: 20px 30px; 
+    border: solid 1px black; 
+    background-color: #621709;
+    color: #3bd6c6;
+    border-radius: 4px; 
+    cursor: pointer;
+    margin-left: 35%;
+    font-size: 20px;
+}
+
+.wf1 input[type="submit"]:hover {
+    color: yellow;
+}
+
+.wf1 textarea {
+    width: 80%; 
+    margin: 0 auto;
 }
 
 footer {
